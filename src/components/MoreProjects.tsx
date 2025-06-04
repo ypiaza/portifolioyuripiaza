@@ -9,7 +9,7 @@ const MoreProjects = () => {
                 >
                     <div>
                         <div>
-                            <h3 className="text-2xl text-white font-bold">{item.title}</h3>
+                            <h3 className="md:text-2xl text-white font-bold">{item.title}</h3>
                             <p className="text-sm text-white/70">{item.description}</p>
                         </div>
                     </div>
