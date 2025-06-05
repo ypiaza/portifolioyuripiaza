@@ -13,7 +13,7 @@ const Projects: React.FC<ProjectProps> = ({ project, description, img, link }) =
 
   return (
     <div
-      className={`flex items-center justify-center p-5 md:px-12 md:py-14 rounded-3xl border border-white/10 bg-[#202020] transition-all duration-300 hover:border-blue-500/70 hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-3d hover:bg-blue-500/50 overflow-hidden`}
+      className={`relative flex items-center justify-center p-5 md:px-12 md:py-14 rounded-3xl border border-white/10 bg-[#202020] transition-all duration-300 hover:border-blue-500/70 hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-3d hover:bg-blue-500/50 overflow-hidden`}
     >
       <div
         className="cursor-pointer perspective-distant"
@@ -25,7 +25,7 @@ const Projects: React.FC<ProjectProps> = ({ project, description, img, link }) =
           <h3 className="md:text-2xl text-white font-bold">{project}</h3>
           <p className="text-sm text-white/70">{description}</p>
           <span
-            className={`hidden md:absolute z-50 top-0 right-0 transition-transform ${hoverAnimation === 1 ? '-translate-x-0' : 'translate-x-28'}`}
+            className={`hidden md:block absolute z-50 top-0 right-0 transition-transform ${hoverAnimation === 1 ? '-translate-x-0' : 'translate-x-28'}`}
           >
             <FaArrowAltCircleRight className="text-4xl -rotate-40 text-white/80" />
           </span>
@@ -37,13 +37,13 @@ const Projects: React.FC<ProjectProps> = ({ project, description, img, link }) =
           />
         </div>
 
+      </div>
         {/* Mobile */}
         <span
-          className={`absolute z-50 top-0 right-0 transition-transform`}
+          className={`md:hidden absolute z-50 top-3 right-2 transition-transform`}
         >
           <FaArrowAltCircleRight className="text-xl -rotate-40 text-white/80" />
         </span>
-      </div>
     </div>
   );
 };
