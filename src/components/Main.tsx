@@ -6,7 +6,7 @@ import Skills from "./Skills"
 
 const Main = () => {
   return (
-    <div className="h-full grid lg:grid-cols-2 grid-cols-1 gap-2 mt-2">
+    <div className="h-full grid lg:grid-cols-2 grid-cols-1 gap-2 mt-2 mb-17">
       {/* Visão desktop */}
       <div className="hidden lg:grid h-full w-full gap-2">
         <Certification />
