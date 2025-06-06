@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div>
         <ul className={`flex-col md:flex-row items-center justify-center gap-5 md:gap-10 transition-all duration-200 ${btnFloat === false ? 'hidden' : 'flex'}`}>
-          <li onClick={() => setBtnFloat(false)} className={`text-5xl md:text-4xl mt-10 md:mt-0 text-white list-none ${btnFloat === false ? 'hidden' : 'block'}`}><CgClose /></li>
+          <li onClick={() => setBtnFloat(false)} className={`hidden md: block text-5xl md:text-4xl mt-10 md:mt-0 text-white list-none ${btnFloat === false ? 'hidden' : 'block'}`}><CgClose /></li>
           {menuFooter.map((item) => (
             <li><a target="_blank" href={item.link}><item.icon className='text-white text-5xl md:text-4xl hover:text-blue-500' /></a></li>
           ))}
