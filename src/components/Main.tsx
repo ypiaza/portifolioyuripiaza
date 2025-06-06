@@ -6,7 +6,7 @@ import Skills from "./Skills"
 
 const Main = () => {
   return (
-    <div className="h-full grid lg:grid-cols-2 grid-cols-1 gap-2 mt-2 mb-17">
+    <div className="h-full grid lg:grid-cols-2 grid-cols-1 gap-2 mt-2 mb-19 md:mb-17">
       {/* Visão desktop */}
       <div className="hidden lg:grid h-full w-full gap-2">
         <Certification />
@@ -30,18 +30,17 @@ const Main = () => {
       <div className="grid gap-2 md:hidden">
         <Certification />
 
-        <div className="rounded-3xl border border-white/10 p-5 bg-blue-500/70 shadow-2xl shadow-blue-500/30 z-40">
+        <div className="rounded-3xl border border-white/10 p-5 bg-blue-500/50 shadow-2xl shadow-blue-500/30 z-40">
           <h3 className="font-bold text-white/90 text-xl text-center ">Projetos</h3>
-        </div>
-
-        <div className="grid grid-cols-2 gap-2">
-
+        <div className="grid grid-cols-2 gap-2 mt-5">
           {projects.filter((item) => item).map((item) => (
             <Projects description={item.description} img={item.img} project={item.project} link={item.link} />
           ))}
         <MoreProjects />
 
         </div>
+        </div>
+
 
       </div>
     </div>

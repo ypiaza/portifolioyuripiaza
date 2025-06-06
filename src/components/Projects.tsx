@@ -13,7 +13,7 @@ const Projects: React.FC<ProjectProps> = ({ project, description, img, link }) =
 
   return (
     <div
-      className={`relative flex items-center justify-center p-5 md:px-12 md:py-14 rounded-3xl border border-white/10 bg-[#202020] transition-all duration-300 hover:border-blue-500/70 hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-3d hover:bg-blue-500/50 overflow-hidden`}
+      className={`relative flex items-center justify-center p-5 md:px-12 md:py-14 rounded-3xl border md:border-white/10 border-blue-500/70 md:bg-[#202020] bg-blue-500/50 transition-all duration-300 hover:border-blue-500/70 hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-3d hover:bg-blue-500/50 overflow-hidden`}
     >
       <div
         className="cursor-pointer perspective-distant"
