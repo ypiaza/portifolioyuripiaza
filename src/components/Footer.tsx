@@ -9,7 +9,7 @@ const Footer = () => {
   const [btnFloat, setBtnFloat] = useState(false)
 
   return (
-    <div className='fixed z-50 bottom-4 right-4 md:left-14 md:block items-center justify-center md:justify-between md:w-[91.7%] px-4 md:px-12 py-5 md:py-2 rounded-3xl border border-white/10 bg-transparent backdrop-blur-sm mt-2'>
+    <div className='fixed z-50 bottom-4 right-4 md:left-14 md:flex items-center justify-center md:justify-between md:w-[91.7%] px-4 md:px-12 py-5 md:py-2 rounded-3xl border border-white/10 bg-transparent backdrop-blur-sm mt-2'>
 
       <RiMenu4Fill onClick={()=>setBtnFloat(true)} className={`text-5xl md:text-4xl text-white ${btnFloat ? 'hidden' : 'block'}`} />
 
