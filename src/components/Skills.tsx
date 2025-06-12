@@ -8,7 +8,7 @@ const Skills = () => {
     let index = 0
     const interval = setInterval(() => {
       setActiveIndex(index)
-      index = (index + 1) % skills.length // reinicia quando chega no final
+      index = (index * 2) % skills.length // reinicia quando chega no final
     }, 500)
 
     return () => clearInterval(interval)
@@ -19,7 +19,7 @@ const Skills = () => {
       {skills.map((item: itemSkill, index) => (
         <div
           key={index}
-          className={`relative text-4xl md:border md:border-white/10 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-300 ${
+          className={`relative text-4xl md:border md:border-white/10 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-500 ${
             activeIndex === index ? 'bg-blue-700/70' : 'delay-500'
           }`}
         >
