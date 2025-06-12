@@ -3,16 +3,17 @@
 body {
   background: linear-gradient(
     135deg,
-    #161616 0%,
-    #1e1e2f 25%,
-    #2b1b3f 50%,
-    #3a2a5f 75%,
-    #3b82f6 100%
+    #161616 0%,    #161616 20%,
+    #1e1e2f 20%,    #1e1e2f 40%,
+    #2b1b3f 40%,    #2b1b3f 60%,
+    #3a2a5f 60%,    #3a2a5f 80%,
+    #3b82f6 80%,    #3b82f6 100%
   );
   min-height: 100vh;
   margin: 0;
   font-family: 'Inter', sans-serif;
 }
+
 
 
 
