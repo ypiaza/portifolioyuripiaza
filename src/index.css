@@ -9,6 +9,7 @@ body {
     #3b82f6 60%,   #3b82f6 80%,
     #1e40af 80%,   #1e40af 100%
   );
+  background-attachment: fixed;
   min-height: 100vh;
   margin: 0;
 }
