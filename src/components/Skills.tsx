@@ -20,7 +20,7 @@ const Skills = () => {
         <div
           key={index}
           className={`relative text-4xl md:border md:border-white/10 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-300 ${
-            activeIndex === index ? 'bg-blue-700/70 scale-110' : 'bg-blue-500/20 scale-100'
+            activeIndex === index ? 'bg-blue-700/70' : 'delay-500'
           }`}
         >
           <item.icon className='z-50 transition-all duration-300' />
