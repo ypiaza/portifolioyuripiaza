@@ -4,7 +4,7 @@ const MoreProjects = () => {
     return (
         <div>
             {moreProjects.map((item) => (
-                <div className=" h-full flex items-center justify-center px-12 py-14 rounded-3xl border transition-all duration-300 border-blue-500/10 shadow-2xl hover:shadow-blue-500/30 bg-blue-500/60 backdrop-blur-sm hover:scale-95 hover:bg-blue-500/60 cursor-pointer"
+                <div className=" h-full flex items-center justify-center px-12 py-14 rounded-3xl border transition-all duration-300 border-blue-500/10 shadow-2xl hover:shadow-blue-500/30 bg-transparent md:bg-blue-500/60 backdrop-blur-sm hover:scale-95 hover:bg-blue-500/60 cursor-pointer"
                 onClick={() => window.open(item.link)}
                 >
                     <div>
