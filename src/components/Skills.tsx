@@ -19,11 +19,13 @@ const Skills = () => {
       {skills.map((item: itemSkill, index) => (
         <div
           key={index}
-          className={`relative text-4xl md:border md:border-white/10 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-500 ${
+          className={`relative text-4xl md:border md:border-white/10 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-700 ${
             activeIndex === index ? 'bg-blue-700/70' : 'delay-500'
           }`}
         >
-          <item.icon className='z-50 transition-all duration-300' />
+          <item.icon className={`z-50 transition-all duration-300  ${
+            activeIndex === index ? 'animate-bounce' : 'delay-500'
+          }`} />
         </div>
       ))}
     </div>
