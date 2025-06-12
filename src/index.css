@@ -3,15 +3,15 @@
 body {
   background: linear-gradient(
     135deg,
-    #0f0f0f 0%,
-    #1a1a2e 12%,
-    #112240 23%,
-    #0f172a 35%,
-    #1e293b 48%,
-    #0f172a 56%,
-    #1a1a2e 66%,
-    #1e3a8a 75%,
-    #3b82f6 85%,
+    #1e3a8a 0%,     /* azul escuro no topo */
+    #0f0f0f 10%,
+    #1a1a2e 22%,
+    #112240 33%,
+    #0f172a 44%,
+    #1e293b 56%,
+    #0f172a 66%,
+    #1a1a2e 75%,
+    #3b82f6 88%,
     #1e40af 100%
   );
   min-height: 100vh;
