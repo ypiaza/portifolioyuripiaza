@@ -23,9 +23,7 @@ const Skills = () => {
             activeIndex === index ? 'bg-blue-700/70' : 'delay-500'
           }`}
         >
-          <item.icon className={`z-50 transition-all duration-300  ${
-            activeIndex === index ? 'animate-bounce' : 'delay-500'
-          }`} />
+          <item.icon className={`z-50 transition-all duration-300`} />
         </div>
       ))}
     </div>
