@@ -1,7 +1,7 @@
 const AvaliableForJob = () => {
     return (
-        <div className="hidden md:flex items-center gap-2 border border-white/10 bg-[#161616] px-3 py-0.5 rounded-3xl">
-            <span className="h-2 w-2 rounded-full bg-emerald-500 block animate-pulse"
+        <div className="hidden md:flex items-center gap-2 border border-white/10 bg-transparent px-3 py-0.5 rounded-3xl">
+            <span className="h-2 w-2 rounded-full bg-emerald-500/70 block animate-pulse"
                 style={{
                     boxShadow: '0 0 2px 2px green'
                 }}

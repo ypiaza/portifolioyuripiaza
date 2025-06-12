@@ -13,7 +13,7 @@ const Projects: React.FC<ProjectProps> = ({ project, description, img, link }) =
 
   return (
     <div
-      className={`relative flex items-center justify-center p-5 md:px-12 md:py-14 rounded-3xl border md:border-white/10 border-blue-500/70 md:bg-[#202020] bg-blue-500/50 transition-all duration-300 hover:border-blue-500/70 hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-3d hover:bg-blue-500/50 overflow-hidden`}
+      className={`relative w-full flex items-center justify-center p-5 md:px-12 md:py-14 rounded-3xl border md:border-white/10 border-blue-500/70 md:bg-transparent md:backdrop-blur-sm bg-blue-500/50 transition-all duration-300 hover:border-blue-500/70 hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-3d hover:bg-blue-500/50 overflow-hidden shadow-2xl shadow-black/30`}
     >
       <div
         className="cursor-pointer perspective-distant"
@@ -21,11 +21,11 @@ const Projects: React.FC<ProjectProps> = ({ project, description, img, link }) =
         onMouseOut={() => setHoverAnimation(false)}
         onClick={() => window.open(link)}
       >
-        <div className="relative">
+        <div className="relative w-full h-full">
           <h3 className="md:text-2xl text-white font-bold">{project}</h3>
           <p className="text-sm text-white/70">{description}</p>
           <span
-            className={`hidden md:block absolute z-50 top-0 right-0 transition-transform ${hoverAnimation === 1 ? '-translate-x-0' : 'translate-x-28'}`}
+            className={`hidden md:block absolute z-50 top-0 right-0 transition-transform ${hoverAnimation === 1 ? '-translate-x-0' : 'translate-x-96'}`}
           >
             <FaArrowAltCircleRight className="text-4xl -rotate-40 text-white/80" />
           </span>
