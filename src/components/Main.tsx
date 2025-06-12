@@ -30,7 +30,7 @@ const Main = () => {
       <div className="grid gap-2 md:hidden">
         <Certification />
 
-        <div className="rounded-3xl border border-white/10 p-5 bg-blue-500/50 shadow-2xl shadow-blue-500/30 z-40">
+        <div className="rounded-3xl border border-white/10 p-5 bg-blue-500/50 backdrop-blur-sm shadow-2xl shadow-blue-500/30 z-40">
           <h3 className="font-bold text-white/90 text-xl text-center ">Projetos</h3>
         <div className="grid grid-cols-2 gap-2 mt-5">
           {projects.filter((item) => item).map((item) => (
