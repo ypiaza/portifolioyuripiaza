@@ -3,17 +3,21 @@
 body {
   background: linear-gradient(
     135deg,
-    #161616 0%,    #161616 20%,
-    #1e1e2f 20%,    #1e1e2f 40%,
-    #2b1b3f 40%,    #2b1b3f 60%,
-    #3a2a5f 60%,    #3a2a5f 80%,
-    #3b82f6 80%,    #3b82f6 100%
+    #0f0f0f 0%,
+    #1a1a2e 12%,
+    #112240 23%,
+    #0f172a 35%,
+    #1e293b 48%,
+    #0f172a 56%,
+    #1a1a2e 66%,
+    #1e3a8a 75%,
+    #3b82f6 85%,
+    #1e40af 100%
   );
   min-height: 100vh;
   margin: 0;
   font-family: 'Inter', sans-serif;
 }
-
 
 
 
