@@ -9,7 +9,7 @@ const Skills = () => {
     const interval = setInterval(() => {
       setActiveIndex(index)
       index = (index + 3) % skills.length // reinicia quando chega no final
-    }, 500)
+    }, 1000)
 
     return () => clearInterval(interval)
   }, [])
