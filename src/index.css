@@ -3,22 +3,20 @@
 body {
   background: linear-gradient(
     135deg,
-    #1e3a8a 0%,     /* azul escuro no topo */
-    #0f0f0f 10%,
-    #1a1a2e 22%,
-    #112240 33%,
-    #0f172a 44%,
-    #1e293b 56%,
-    #0f172a 66%,
-    #1a1a2e 75%,
-    #3b82f6 88%,
-    #1e40af 100%
+    #1e3a8a 0%,     #1e3a8a 10%,
+    #0f0f0f 10%,    #0f0f0f 22%,
+    #1a1a2e 22%,    #1a1a2e 33%,
+    #112240 33%,    #112240 44%,
+    #0f172a 44%,    #0f172a 56%,
+    #1e293b 56%,    #1e293b 66%,
+    #0f172a 66%,    #0f172a 75%,
+    #1a1a2e 75%,    #1a1a2e 88%,
+    #3b82f6 88%,    #3b82f6 94%,
+    #1e40af 94%,    #1e40af 100%
   );
   min-height: 100vh;
   margin: 0;
-  font-family: 'Inter', sans-serif;
 }
-
 
 
 
