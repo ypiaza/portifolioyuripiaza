@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 body {
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(0, 212, 255, 0.25), transparent 40%),
-    radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.2), transparent 40%),
-    linear-gradient(135deg, #0f0f0f, #1a1a1a, #111827);
+  background: repeating-linear-gradient(
+    135deg,
+    #111 0px,
+    #111 20px,
+    #1a1a1a 20px,
+    #1a1a1a 40px
+  );
   background-attachment: fixed;
 }
 
