@@ -3,11 +3,9 @@
 body {
   background: linear-gradient(
     135deg,
-    #1e3a8a 0%,    #1e3a8a 20%,
-    #0f0f0f 20%,   #0f0f0f 40%,
-    #112240 40%,   #112240 60%,
-    #3b82f6 60%,   #3b82f6 80%,
-    #1e40af 80%,   #1e40af 100%
+    #1e3a8a 0%,    #1e3a8a 33.33%,
+    #0f0f0f 33.33%, #0f0f0f 66.66%,
+    #3b82f6 66.66%, #3b82f6 100%
   );
   background-attachment: fixed;
 }
