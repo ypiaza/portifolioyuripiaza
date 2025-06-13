@@ -6,19 +6,7 @@ const Apresentation = () => {
 
     return (
         <div
-  className="relative flex w-full lg:grid lg:grid-cols-2 items-center justify-between h-full lg:h-[25rem] p-10 md:p-14"
-  style={{
-    borderTop: "2px solid rgba(255, 255, 255, 0.2)",
-    borderRight: "2px solid rgba(255, 255, 255, 0.2)",
-    borderBottom: "2px solid rgba(255, 255, 255, 0.1)",
-    borderLeft: "2px solid rgba(255, 255, 255, 0.1)",
-    borderRadius: "1.7rem",
-    background: "rgba(255, 255, 255, 0.06)",
-    backdropFilter: "blur(8px)",
-    WebkitBackdropFilter: "blur(8px)",
-    boxShadow: "inset 0 0 6px rgba(255, 255, 255, 0.08), 0 4px 20px rgba(0, 0, 0, 0.3)"
-  }}
->
+  className="glass relative flex w-full lg:grid lg:grid-cols-2 items-center justify-between h-full lg:h-[25rem] p-10 md:p-14">
             <div className="h-full w-full flex flex-col items-center md:items-start justify-between">
                 <div>
                     <h1 className="text-white/70 text-sm md:text-md">Desenvolvedor Frontend</h1>

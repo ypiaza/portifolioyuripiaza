@@ -15,15 +15,15 @@ const Skills = () => {
   }, [])
 
   return (
-    <div className='hidden md:grid md:grid-cols-4 md:h-[15rem] overflow-hidden rounded-2xl md:rounded-3xl md:border text-white md:border-white/10 bg-transparent backdrop-blur-sm shadow-2xl shadow-black/30'>
+    <div className='hidden md:grid md:grid-cols-8 p-[0.1rem] overflow-hidden text-transparent glass rounded-3xl shadow-2xl shadow-black/30 '>
       {skills.map((item: itemSkill, index) => (
         <div
           key={index}
-          className={`relative text-4xl md:border md:border-white/10 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-700 ${
-            activeIndex === index ? 'bg-blue-700/70' : 'delay-500'
+          className={`text-4xl flex items-center p-5 justify-center transition-all duration-1000 ${
+            activeIndex === index ? ' glass' : 'delay-500'
           }`}
         >
-          <item.icon className={`z-50 transition-all duration-300`} />
+          <item.icon className={`z-50 transition-all duration-300 text-white`} />
         </div>
       ))}
     </div>
