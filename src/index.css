@@ -3,8 +3,8 @@
 body {
   background: linear-gradient(
     135deg,
-    #1e3a8a 0%,    #1e3a8a 33.33%,
-    #3b82f6 66.66%, #3b82f6 100%
+    #0f0f0f 0%,    #0f0f0f 50%,
+    #3b82f6 50%,   #3b82f6 100%
   );
   background-attachment: fixed;
 }
