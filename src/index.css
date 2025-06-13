@@ -4,9 +4,10 @@ body {
 background: linear-gradient(
   60deg,
   #072d8d 0%,
-  #121725 50%,
+  #121725 60%,
   #161616 100%
 );
+  background-attachment: fixed;
 }
 
 
