@@ -5,7 +5,7 @@ import AvaliableForJob from "./AvaliableForJob"
 const Apresentation = () => {
 
     return (
-        <div className="relative flex w-full lg:grid lg:grid-cols-2 items-center justify-between h-full lg:h-[25rem] p-10 md:p-14 rounded-3xl border border-white/20 bg-transparent backdrop-blur-xl shadow-2xl shadow-black/30">
+        <div className="relative flex w-full lg:grid lg:grid-cols-2 items-center justify-between h-full lg:h-[25rem] p-10 md:p-14 rounded-3xl border-2 border-t-white/20 border-r-white/20 border-b-white/10 border-l-white/10 bg-transparent backdrop-blur shadow-2xl shadow-black/30">
             <div className="h-full w-full flex flex-col items-center md:items-start justify-between">
                 <div>
                     <h1 className="text-white/70 text-sm md:text-md">Desenvolvedor Frontend</h1>
