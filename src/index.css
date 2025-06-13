@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
 body {
-background: linear-gradient(
-  60deg,
-  #072d8d 0%,
-  #121725 60%,
-  #161616 100%
-);
+  background: linear-gradient(
+    135deg,
+    #1e3a8a 0%,    #1e3a8a 20%,
+    #0f0f0f 20%,   #0f0f0f 40%,
+    #112240 40%,   #112240 60%,
+    #3b82f6 60%,   #3b82f6 80%,
+    #1e40af 80%,   #1e40af 100%
+  );
   background-attachment: fixed;
 }
 
