@@ -8,8 +8,8 @@ const Certification = () => {
             <ul>
                 {certification.map((item) => (
                     <li className='mb-5 opacity-90 w-full flex justify-between flex-col'>
-                        <p className="font-bold text-blue-500/80">{item.title}</p>
-                        <p className="text-white/70 text-sm">{item.about}</p>
+                        <p className="font-bold text-white">{item.title}</p>
+                        <p className="text-white/60 text-sm">{item.about}</p>
                     </li>
                 ))}
             </ul>

@@ -18,11 +18,12 @@ const Footer = () => {
         <ul className={`flex-col md:flex-row items-center justify-center gap-5 md:gap-10 transition-all duration-200 ${btnFloat === false ? 'hidden' : 'flex'}`}>
           <li onClick={() => setBtnFloat(false)} className={`hidden md:block text-5xl md:text-4xl mt-10 md:mt-0 text-white list-none ${btnFloat === false ? 'hidden' : 'block'}`}><CgClose className="cursor-pointer" /></li>
           {menuFooter.map((item) => (
-            <li><a target="_blank" href={item.link}><item.icon className='text-white text-5xl md:text-4xl hover:text-blue-500' /></a></li>
+            <li><a target="_blank" href={item.link}><item.icon className='text-white/60 text-5xl md:text-4xl hover:text-white transition duration-300' /></a></li>
           ))}
         </ul>
         <li onClick={() => setBtnFloat(false)} className={`block md:hidden text-5xl md:text-4xl mt-10 md:mt-0 text-white list-none ${btnFloat === false ? 'hidden' : 'block'}`}><CgClose /></li>
       </div>
+
       <AvaliableForJob />
     </div>
   )

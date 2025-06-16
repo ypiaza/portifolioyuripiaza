@@ -33,7 +33,6 @@ const Apresentation = () => {
                                     <item.icon className='text-3xl border-l-2 border-white/10 text-white px-1'
                                         style={{
                                             backgroundColor: item.color,
-                                            boxShadow: `0 0 10px 5px ${item.color}70`
                                         }} />
                                 </div>
 
