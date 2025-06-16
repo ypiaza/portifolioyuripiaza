@@ -13,12 +13,12 @@ export const btn: itemBtn[] = [
     {
         link: 'https://wa.me/5579998671726',
         name: 'Fale comigo',
-        color: '#25D366',
+        color: 'rgba(37, 211, 102, 0.5)',
         icon: IoLogoWhatsapp
     },{
         link: 'https://www.linkedin.com/in/yuri-piaza-615b6730a',
         name: 'Meu LinkedIn',
-        color: '#0A66C2',
+        color: 'rgba(10, 102, 194, 0.5)',
         icon: IoLogoLinkedin
     }
 ]

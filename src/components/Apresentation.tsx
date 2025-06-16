@@ -32,7 +32,6 @@ const Apresentation = () => {
                                     <item.icon className='text-3xl border-l-2 border-white/10 text-white px-1'
                                         style={{
                                             backgroundColor: item.color,
-                                            boxShadow: `0 0 10px 5px ${item.color}70`
                                         }} />
                                 </div>
 
@@ -54,7 +53,7 @@ const Apresentation = () => {
             </div>
             {/* Versão mobile */}
             <div className="block absolute md:hidden top-2 left-2">
-                <img className="rounded-full w-10 border-2 shadow-2xl bg-center bg-cover border-blue-500/50 shadow-blue-500" src={img} alt="Me" />
+                <img className="rounded-full w-10 border-2 shadow-2xl bg-center bg-cover border-white/10" src={img} alt="Me" />
             </div>
         </div>
     )

@@ -25,7 +25,7 @@ const Projects: React.FC<ProjectProps> = ({ project, description, img, link }) =
           <h3 className="md:text-2xl text-white font-bold">{project}</h3>
           <p className="text-sm text-white/70">{description}</p>
           <span
-            className={`hidden md:block absolute z-50 top-0 right-0 transition-transform ${hoverAnimation === 1 ? '-translate-x-0' : 'translate-x-28'}`}
+            className={`hidden md:block absolute z-50 top-0 right-0 transition-transform ${hoverAnimation === 1 ? '-translate-x-0' : 'translate-x-96'}`}
           >
             <FaArrowAltCircleRight className="text-4xl -rotate-40 text-white/80" />
           </span>

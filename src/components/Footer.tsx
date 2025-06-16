@@ -9,16 +9,16 @@ const Footer = () => {
   const [btnFloat, setBtnFloat] = useState(false)
 
   return (
-    <div className='fixed z-50 bottom-4 right-4 md:left-14 md:flex items-center justify-center md:justify-between md:w-[91.7%] px-4 md:px-12 py-5 md:py-2 rounded-3xl border border-white/10 bg-transparent backdrop-blur-sm mt-2'>
+    <div className='fixed z-50 bottom-4 right-4 md:static md:flex items-center justify-center md:justify-between md:w-full px-2 md:px-12 py-3 md:py-4 rounded-3xl border border-white/10 bg-[#202020]/40 md:bg-[#202020]/80  backdrop-blur-sm mt-2 '>
 
-      <RiMenu4Fill onClick={()=>setBtnFloat(true)} className={`text-5xl md:text-4xl text-white ${btnFloat ? 'hidden' : 'block'}`} />
+      <RiMenu4Fill onClick={()=>setBtnFloat(true)} className={`animate-pulse cursor-pointer text-5xl md:text-4xl text-white ${btnFloat ? 'hidden' : 'block'}`} />
 
 
       <div>
-        <ul className={`flex-col md:flex-row items-center justify-center gap-5 md:gap-10 transition-all duration-200 ${btnFloat === false ? 'hidden' : 'flex'}`}>
-          <li onClick={() => setBtnFloat(false)} className={`hidden md:block text-5xl md:text-4xl mt-10 md:mt-0 text-white list-none ${btnFloat === false ? 'hidden' : 'block'}`}><CgClose /></li>
+        <ul className={`flex-col md:flex-row items-center justify-center gap-5 md:gap-10 transition-all duration-300 ${btnFloat === false ? 'hidden' : 'flex'}`}>
+          <li onClick={() => setBtnFloat(false)} className={`hidden md:block text-5xl md:text-4xl mt-10 md:mt-0 text-white list-none ${btnFloat === false ? 'hidden' : 'block'}`}><CgClose className="cursor-pointer" /></li>
           {menuFooter.map((item) => (
-            <li><a target="_blank" href={item.link}><item.icon className='text-white text-5xl md:text-4xl hover:text-blue-500' /></a></li>
+            <li><a target="_blank" href={item.link}><item.icon className='text-white text-5xl md:text-4xl hover:text-blue-500/50 transition-all duration-300' /></a></li>
           ))}
         </ul>
         <li onClick={() => setBtnFloat(false)} className={`block md:hidden text-5xl md:text-4xl mt-10 md:mt-0 text-white list-none ${btnFloat === false ? 'hidden' : 'block'}`}><CgClose /></li>

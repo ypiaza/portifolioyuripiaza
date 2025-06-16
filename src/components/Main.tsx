@@ -6,7 +6,7 @@ import Skills from "./Skills"
 
 const Main = () => {
   return (
-    <div className="h-full grid lg:grid-cols-2 grid-cols-1 gap-2 mt-2 md:mb-20">
+    <div className="h-full grid lg:grid-cols-2 grid-cols-1 gap-2 mt-2">
       {/* Visão desktop */}
       <div className="hidden lg:grid h-full w-full gap-2">
         <Certification />
@@ -28,6 +28,7 @@ const Main = () => {
 
       {/* Visão mobile */}
       <div className="grid gap-2 md:hidden">
+        <Skills />
         <Certification />
 
         <div className="rounded-3xl border border-white/10 p-5 bg-blue-500/50 shadow-2xl shadow-blue-500/30 z-40">

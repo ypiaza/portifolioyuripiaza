@@ -1,16 +1,13 @@
-import { useState } from "react"
 import { skills, type itemSkill } from "../data/skills"
 
 
 const Skills = () => {
-  const [hoverIcon, setHoverIcon] = useState<number | false>(false)
+
   return (
-    <div className='hidden md:grid md:grid-cols-4 md:h-[15rem] overflow-hidden rounded-2xl md:rounded-3xl md:border text-white md:border-white/10 bg-[#202020] '>
+    <div className='grid grid-cols-8 p-4 overflow-hidden rounded-2xl md:rounded-3xl border text-white/80 border-white/10 bg-[#202020] '>
       {skills.map((item: itemSkill, index) => (
-        <div className={`relative text-4xl md:border md:border-white/10 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-300 ${hoverIcon === index ? 'bg-blue-500/70 shadow-2xl shadow-blue-500/50 ' : 'delay-500'}`}
-        onMouseOver={() => setHoverIcon(index)}
-        onMouseOut={() => setHoverIcon(false)}>
-          <item.icon className='z-50'/>
+        <div className={`relative text-4xl flex items-center justify-center cursor-pointer`}>
+          <item.icon key={index} className='transition-all transform-3d perspective-[1000px] duration-300 hover:rotate-y-180 scale-3d hover:scale-150 z-50'/>
         </div>
       ))}
     </div>
