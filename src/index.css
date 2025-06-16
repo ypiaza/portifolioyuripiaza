@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
 body{
-    background-color: #161616;
+    background: linear-gradient(130deg, #2b2a2a ,#272727, #2b2a2a);
+    background-attachment: fixed;
+}
+
+.shadow-items{
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)
+}
+
+.shadow-projects:hover{
+    box-shadow: 0 0 150px rgba(43, 127, 255, 0.5);
+    z-index: 150;
 }
